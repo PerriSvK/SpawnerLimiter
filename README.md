@@ -38,7 +38,7 @@ msg:
 
 ## Permissie
 
-* `spawnerlimiter.group.<group>` - Permissia na danu skupinu z configu, zakladna je * `spawnerlimiter.group.<group>` - Permissia na danu skupinu z configu, zakladna je `default`
+* `spawnerlimiter.group.<group>` - Permissia na danu skupinu z configu, zakladna je `default`
 * `spawnerlimiter.cmd.me` - Povoluje prikaz na vypisanie, kolko spawnerov este mozem polozit, zakladne je to povolene
 * `spawnerlimiter.cmd.other` - Povoluje prikaz na vypisanie, kolko spawnerov este moze dany hrac polozit
 * `spawnerlimiter.bypass` - Povoluje preskocit kontrolu limitu
