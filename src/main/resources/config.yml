@@ -1,0 +1,19 @@
+ip-based: true # Check by IP or by nick
+database:
+  host: localhost
+  user: root
+  pass: "123"
+  db: "minecraft"
+
+groups:
+  default: 20 # unremovable
+  vip: 25
+  support: 30
+  admin: 35
+
+msg:
+  remaining: "&7Este mozes polozit &e&l%d &7spawnerov"
+  too-many: "&cDosiahol si limit spawnerov"
+  info: "&7Ako &e&l%s &7mozes polozit este &e&l%d &7spawnerov"
+  info-other: "&7Hrac &e&l%s &7je skupina &e&l%s &7a moze polozit este &e&l%d &7spawnerov"
+  no-perm: "&cNa tento prikaz nemas permissie"

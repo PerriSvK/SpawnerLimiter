@@ -1,0 +1,19 @@
+name: ${project.name}
+main: sk.perri.kc.spawnerlimiter.Main
+version: ${project.version}
+author: Perri
+description: ${project.description}
+commands:
+  spawnerlimiter:
+    aliases: [spwl]
+    description: SpawnerLimiter main command
+    usage: /spawnerlimiter
+permissions:
+  spawnerlimiter.group.default:
+    default: true
+  spawnerlimiter.cmd.me:
+    default: true
+  spawnerlimiter.cmd.other:
+    default: op
+  spawnerlimiter.bypass:
+    default: op
