@@ -15,5 +15,7 @@ permissions:
     default: true
   spawnerlimiter.cmd.other:
     default: op
+  spawnerlimiter.cmd.reload:
+    default: op
   spawnerlimiter.bypass:
     default: op

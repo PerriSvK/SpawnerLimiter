@@ -35,10 +35,12 @@ msg:
 
 * `/spawnerlimiter` - Vypise pocet spawnerov, ktore mozem polozit
 * `/spawnerlimiter <nick>` - Vypise pocet spawnerov, ktore moze polozit dany hrac
+* `/spawnerlimiter reload` - Znovu nacita config.yml
 
 ## Permissie
 
 * `spawnerlimiter.group.<group>` - Permissia na danu skupinu z configu, zakladna je `default`
 * `spawnerlimiter.cmd.me` - Povoluje prikaz na vypisanie, kolko spawnerov este mozem polozit, zakladne je to povolene
 * `spawnerlimiter.cmd.other` - Povoluje prikaz na vypisanie, kolko spawnerov este moze dany hrac polozit
+* `spawnerlimiter.cmd.reload` - Povoluje prikaz na znovu nacitanie configu
 * `spawnerlimiter.bypass` - Povoluje preskocit kontrolu limitu

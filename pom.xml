@@ -6,7 +6,7 @@
 
     <groupId>sk.perri.kc</groupId>
     <artifactId>spawnerlimiter</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>SpawnerLimiter</name>
     <description>Plugin limit players to place spawners</description>
 

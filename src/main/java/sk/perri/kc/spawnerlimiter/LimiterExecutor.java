@@ -1,6 +1,7 @@
 package sk.perri.kc.spawnerlimiter;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -11,6 +12,22 @@ public class LimiterExecutor implements CommandExecutor
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
+        if(sender.hasPermission("spawnerlimiter.cmd.reload") && args.length == 1 && args[0].equalsIgnoreCase("reload"))
+        {
+            Main.self.reloadConfig();
+
+            Main.self.limits.clear();
+            Main.self.getConfig().getConfigurationSection("groups").getKeys(false).forEach(k ->
+                Main.self.limits.put(k, Main.self.getConfig().getInt("groups."+k)));
+
+            Main.self.msg.clear();
+            Main.self.getConfig().getConfigurationSection("msg").getKeys(false).forEach(k ->
+                Main.self.msg.put(k, ChatColor.translateAlternateColorCodes('&', Main.self.getConfig().getString("msg."+k))));
+
+            Main.self.ipBased = Main.self.getConfig().getBoolean("ip-based");
+            return true;
+        }
+
         if ((sender.hasPermission("spawnerlimiter.cmd") || sender.hasPermission("spawnerlimiter.cmd.me"))
             && args.length == 0)
         {
